@@ -1,0 +1,34 @@
+@url=http://127.0.0.1:3001/api
+@json = Content-Type: application/json
+###
+get {{url}}
+
+### 注册
+post {{url}}/register
+{{json}}
+
+{
+    "username": "user1",
+    "password": "123456"
+}
+
+###
+
+post {{url}}/register
+{{json}}
+
+{
+    "username": "user2",
+    "password": "123456"
+}
+### 登陆
+post {{url}}/login
+{{json}}
+
+{
+    "username": "user2",
+    "password": "123456"
+}
+
+###
+get {{url}}/users
