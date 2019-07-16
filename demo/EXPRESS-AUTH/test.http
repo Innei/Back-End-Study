@@ -32,3 +32,29 @@ post {{url}}/login
 
 ###
 get {{url}}/users
+
+###
+post https://user.qzone.qq.com/proxy/domain/taotao.qzone.qq.com/cgi-bin/emotion_cgi_publish_v6?qzonetoken=c29b1e553f42557058e2071506063f3cc6b70c0b5cf3f582f489ce45e800b08452ad31c60c537d&g_tk=1580693286
+Cookie: pgv_pvid=5138560340; pgv_pvi=6941849600; RK=tKzYaNV0Sa; ptcz=357fbf61876a9afb4f096a8d95949a518cef88b8905a81253c30bed8aa34fa48; tvfe_boss_uuid=52b28869d6da5296; QZ_FE_WEBP_SUPPORT=1; sd_userid=46981535546326110; sd_cookie_crttime=1535546326110; o_cookie=1003521738; eas_sid=j185z4r2Z215r5m6n8f935k659; pac_uid=1_1003521738; ied_qq=o1003521738; qz_screen=1920x1080; __Q_w_s_hat_seed=1; _tucao_userinfo=ZWxiKzZvbHNHUy9NUUU0b0ttQ0RSaGMxMnh3MVgrT2xlOVlTd2pBeHozeHZuRVVPOFZKQno3aXJhNndBQStWYnU3RzExOVhaZDFtdGk3WXBvWE1FZitXeERDUDE3Z0ZJb2hyTCt4ekhGVjZIT1c2VTBnYW05Smo5TGxYanEwTVdMdzgrWVNBaWptTE5ITWVtcGtHVFdqaFIwTGtPU3ZTNklKY1FpM3AwUkxMbXZjTU5acTc5aklQcFBrQUxQWFpYQVdUeFhtdStaTWVSVnJKRU9JZzVKVklhMXhqeWJ0UDhSalk0SGM1Q28yaHZWa0tELzVVWjdiZHJobXh5SDJBSUxtenF3UGo1WUttckRBbGEvY0JhRlcyenVNZkJHUlBPZE04aGFsMUNXQkpyNHlNRWY3cVhROU80dWVwUzFIdWxJMjlVaHZqaHRZdnhERC8zZEp4NUFnL3Y4Q29xeDJHU2RHbUYyVXd2WjZ2cTZiOGJDaXdKbmFVS3RmTFFyNHM4NUNFdjhOOFBJUGJZa01uZFhETG5GZWxiUmh5K3pZa0pTVFpYQi9aY1JtZ1pBb2RtN2VFVnFIWHRidDRhSi96RnZnOEp4dVBldFJObFo4MlJlMzlpRGxqS3JyRGtKdjBLK3dMOVNjZmlZcEpNcEVFSGN0Y21OM2RmWGVxVEt2aXNEQmN2QVNNcUhQbmx3NjJqSUZSSFlIT2RSVjNESTFvNWFQQjRITGhMN2xjPQ%3D%3D--UCmI%2BzIQwdFSrmZ8pdwbRQ%3D%3D; uin=o1003521738; skey=@UMh3DiHME; ptisp=cnc; p_uin=o1003521738; pt4_token=L*8lR8ysLGa3DivVf4A7cH5xccPI1U4lqmKDVv11phg_; p_skey=kp0KaZIuudtzPE94Kpc-EVKbrZ*H9EGZR8C2pzlqD7Y_; Loading=Yes; qzmusicplayer=qzone_player_1003521738_1560606461623; qqmusic_uin=; qqmusic_key=; qqmusic_fromtag=; pgv_info=ssid=s5345151800; cpu_performance_v8=2; rv2=80179EDD4B6FC76A754CB0083BDE34C32314ED3C75D15F92C0; property20=4812DBD9FA8DB5A3D5635F88EE7284275B9DD657955150A429665C593C4BB1219D380A6E42061AFA
+content-type: application/x-www-form-urlencoded;charset=UTF-8
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36
+
+{
+"syn_tweet_verson": 1,
+"paramstr": 1,
+"pic_template": "",
+"richtype": "",
+"richval": "",
+"special_url": "",
+"subrichtype": "",
+"who": 1,
+"con": "test",
+"feedversion": 1,
+"ver": 1,
+"ugc_right": 1,
+"to_sign": 0,
+"hostuin": "1003521738",
+"code_version": "1",
+"format": "fs",
+"qzreferrer": "https://user.qzone.qq.com/1003521738/infocenter"
+}

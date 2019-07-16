@@ -1,0 +1,12 @@
+@url=http://127.0.0.1:8000/
+### get
+get http://127.0.0.1:8000
+
+### post name 
+post {{url}}names
+Content-Type: application/json
+
+{
+    "name": "ab",
+    "age": 8
+}
