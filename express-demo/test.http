@@ -1,6 +1,8 @@
 @url=http://127.0.0.1:8000/
 ### get
-get http://127.0.0.1:8000
+get http://127.0.0.1:8000/names
+### get
+get {{url}}names/abc
 
 ### post name 
 post {{url}}names
@@ -10,3 +12,16 @@ Content-Type: application/json
     "name": "ab",
     "age": 8
 }
+
+### put edit 
+
+put {{url}}names/abc
+Content-Type: application/json
+
+{
+   "name": "qq"
+}
+
+### del
+
+DELETE {{url}}names/ab
