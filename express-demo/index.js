@@ -15,10 +15,9 @@ const Names = mongoose.model(
 const app = new express();
 
 app.use(express.json()); // 请求处理 json 数据 处理 json 时需要,不加这种中间件, req.body 为 undefined
-
-//app.use("/", express.static("./public"));
-
 app.use(require("cors")());
+
+app.use("/json", express.static("./public/json"));
 
 app.get("/", (req, res) => {
   res.send({
@@ -48,16 +47,15 @@ app.put("/names/:name", async (req, res) => {
   name.name = req.body.name;
   await name.save();
   res.send(name);
-  
 });
 
-app.delete('/names/:name', async (req, res) => {
-  const name = await Names.findOne({name: req.params.name})
-  await name.remove()
+app.delete("/names/:name", async (req, res) => {
+  const name = await Names.findOne({ name: req.params.name });
+  await name.remove();
   res.send({
     success: true
-  })
-})
+  });
+});
 
 app.listen(8000, () => {
   console.log("server on http://127.0.0.1:8000");
