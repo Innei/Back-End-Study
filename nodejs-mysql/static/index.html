@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mid">
+      <input type="text" id="query" />
+      <button>查询</button>
+
+      <div class="res">
+        <div id="inner"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const btn = document.getElementsByTagName('button')[0]
+    const inner = document.getElementById('inner')
+    btn.onclick = () => {
+      const query = document.getElementById('query').value
+      const xhr = new XMLHttpRequest()
+      xhr.open('post', '/query')
+
+      const data = {
+        query
+      }
+
+      xhr.onreadystatechange = () => {
+        if (xhr.status === 200 && xhr.readyState === 4) {
+          inner.innerText = xhr.responseText
+        }
+      }
+      xhr.setRequestHeader('Content-Type', 'application/json')
+      xhr.send(JSON.stringify(data))
+    }
+  </script>
+</html>
